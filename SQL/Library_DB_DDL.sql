@@ -6,6 +6,7 @@ CREATE TABLE person (
     id                   BIGINT NOT NULL,
     person_type_id       BIGINT NOT NULL,
     email                VARCHAR(200) NOT NULL,
+	password             VARCHAR(36) NOT NULL
     first_name           VARCHAR(200) NOT NULL, 
     last_name            VARCHAR(200) NOT NULL,
     birth_date           DATE, 
