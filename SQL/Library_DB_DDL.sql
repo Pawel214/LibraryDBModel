@@ -45,7 +45,7 @@ CREATE TABLE address (
     last_updated_date    TIMESTAMP WITH TIME ZONE,  
     version              BIGINT NOT NULL DEFAULT 0,
   CONSTRAINT address_pk PRIMARY KEY (id),
-  CONSTRAINT person_fk1 FOREIGN KEY(person_id) REFERENCES person(id)
+  CONSTRAINT address_fk1 FOREIGN KEY(person_id) REFERENCES person(id)
 );
 
 CREATE INDEX address_idx1 ON address (person_id);
